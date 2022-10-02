@@ -25,7 +25,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
       </Head>
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+        <MantineProvider theme={{ cursorType: 'pointer' }} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider>
             <Component {...pageProps} />
           </NotificationsProvider>
